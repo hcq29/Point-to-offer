@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>二维数组中的查找</title>
+</head>
+
+<body>
+    <script>
+
+        // 线性查找
+        function Find1(target, array) {
+            // write code here
+
+            for (let i = 0; i < array.length; i++) {
+                for (let j = 0; j < array.length; j++) {
+                    if (array[i][j] == target) return true;
+                }
+            }
+
+            return false;
+        }
+
+
+        // 从右边查找
+        function Find2(target, array) {
+            // write code here
+            if (array.length == 0 || array[0].length == 0) return false;
+
+            var i = 0;
+            var j = array[0].length - 1;
+
+            while (i < array.length && j >= 0) {
+                if (array[i][j] == target) return true;
+                if (array[i][j] > target) j--;
+                else i++;
+            }
+            return false;
+        }
+
+        var arr = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]];
+        console.log(Find2(10, arr)); //true
+        console.log(Find2(20, arr)); //false
+
+    </script>
+
+</body>
+
+</html>

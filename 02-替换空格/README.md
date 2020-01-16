@@ -16,7 +16,7 @@
 "We%20Are%20Happy"
 ```
 
-### 解法一：replace()方法
+### 解法一：replace() + 正则
 
 ```js
 function replaceSpace(str)
@@ -82,6 +82,8 @@ function replaceSpace(str)
 ```
 
 ### 解法四：encodeURIComponent()转码
+
+`encodeURIComponent()`是对统一资源标识符（URI）的组成部分进行编码的方法。它使用一到四个转义序列来表示字符串中的每个字符的UTF-8编码（只有由两个Unicode代理区字符组成的字符才用四个转义字符编码）。具体请查看：[MDN之encodeURIComponent](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent)
 
 ```js
 function replaceSpace(str)
