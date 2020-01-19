@@ -108,7 +108,7 @@ console.log(list.toString()); //67 0 24 58
 
 
 
-## 解法一：
+### 解法一：
 
 使用循环的方式，在一个新数组中的前面进行插入（`unshift()`）节点的值。
 
@@ -125,7 +125,7 @@ function printListFromTailToHead(head) {
 }
 ```
 
-## 解法二：
+### 解法二：
 
 使用循环的方式，在一个新数组中的后面进行插入（`push()`）节点的值，最后将数组翻转。
 
@@ -140,7 +140,7 @@ function printListFromTailToHead_2(head) {
 }
 ```
 
-## 解法三：
+### 解法三：
 
 使用递归的方式。
 
@@ -158,4 +158,5 @@ function printListFromTailToHead_2(head) {
 
 
 > **时间复杂度：O(n)**
+>
 > **空间复杂度：O(n)**
