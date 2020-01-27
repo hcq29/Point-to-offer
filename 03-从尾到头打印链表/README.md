@@ -19,7 +19,7 @@
 
 这里的链表结构是这样的
 
-<img src="images/image-20200119153013978.png" alt="image-20200119153013978" style="zoom:80%;" />
+![](images/image-20200119153013978.png)
 
 为了更好的调试代码，将剑指offer上的注释进行补充
 
@@ -112,7 +112,7 @@ console.log(list.toString()); //67 0 24 58
 
 使用循环的方式，在一个新数组中的前面进行插入（`unshift()`）节点的值。
 
-<img src="images/image-20200119155011339.png" alt="image-20200119155011339" style="zoom:67%;" />
+![](images/image-20200119155011339.png)
 
 ```js
 function printListFromTailToHead(head) {

@@ -16,9 +16,9 @@ git clone https://github.com/hcq29/Sword-means-offer.git
 node xxxx.js
 ```
 
-<img src="images/image-20200116140535097.png" alt="image-20200116140535097" style="zoom: 50%;" />
+![](images/image-20200116140535097.png)
 
-<img src="images/image-20200116140806972.png" alt="image-20200116140806972" style="zoom: 50%;" />
+![](src="images/image-20200116140806972.png)
 
 ## 题库
 

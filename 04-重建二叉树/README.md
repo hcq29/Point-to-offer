@@ -49,7 +49,7 @@ function BinaryTree(){
 
 （3） 先序遍历右子树。
 
-<img src="images/image-20200123163702179.png" alt="image-20200123163702179" style="zoom: 67%;" /><img src="images/image-20200123163745765.png" alt="image-20200123163745765" style="zoom:67%;" />
+![](images/image-20200123163702179.png)![](images/image-20200123163745765.png)
 
 **实现代码**
 
@@ -156,7 +156,9 @@ BinaryTree.prototype.postOrderTraversalNode = function(node, fun){
 
 在了解了二叉树的结构和基本遍历方式后，我们就可以知道一些规律，观察三种遍历方式当中的第二张图，再划分题目给出的实例结构。
 
-<img src="images/image-20200123163745765.png" alt="image-20200123163745765" style="zoom: 45%;" /><img src="images/20190820170141566.png" alt="20190820170141566" style="zoom:80%;" /><img src="images/20190820181129427.png" alt="20190820181129427" style="zoom:80%;" />
+![](images/image-20200123163745765.png)
+![](images/20190820170141566.png)
+![](images/20190820181129427.png)
 
 前序遍历序列
 

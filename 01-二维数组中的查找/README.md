@@ -23,7 +23,7 @@ false
 
 ### 解法一：暴力
 
-<img src="images/wps1.jpg" alt="img" style="zoom:80%;" /> 
+![](images/wps1.jpg)
 
  ```js
 function Find(target, array)
