@@ -18,7 +18,7 @@ node xxxx.js
 
 ![](images/image-20200116140535097.png)
 
-![](src="images/image-20200116140806972.png)
+![](images/image-20200116140806972.png)
 
 ## 题库
 
