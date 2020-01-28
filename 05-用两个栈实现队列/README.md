@@ -119,7 +119,28 @@ function push(node)
 - 如果outStack中没有元素，就将inStack中的元素倒置放入outStack中
 - 返回outStack的栈顶元素
 
+![image-20200129000523795](images/image-20200129000523795.png)
+
 ```javascript
+function pop()
+{
+    // write code here
+    if(!outStack.length)
+        while(inStack.length) outStack.push(inStack.pop());
+    return outStack.pop();
+}
+```
+
+完整代码
+
+```javascript
+var inStack = [];
+var outStack = [];
+function push(node)
+{
+    // write code here
+    inStack.push(node);
+}
 function pop()
 {
     // write code here
