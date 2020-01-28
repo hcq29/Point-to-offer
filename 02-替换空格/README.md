@@ -62,21 +62,20 @@ function replaceSpace(str)
 }
 ```
 
-### 解法三：拆+逐个`+=`组合
+### 解法三：逐个`+=`组合
 
-按照上述拆分的数组，将`join()`方法换成我们自己实现的数组+=组合
+使用遍历字符串的方法实现+=组合
 
 ```js
 function replaceSpace(str)
 {
-    strArr = str.split('');
     var result = '';
-    for(let i = 0; i < strArr.length; i++){
-        if(strArr[i] == ' ')
-            result += '%20';
-        else 
-            result += strArr[i];
-    }
+    for(let char of str){
+    	if(char == ' ')
+       		result += '%20';
+    	else 
+       		result += char;
+	}
     return result;
 }
 ```
