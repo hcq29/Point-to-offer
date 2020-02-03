@@ -28,8 +28,6 @@ function jumpFloorII(number)
 
 ## 解法二：移位运算
 
-
-
 ```javascript
 function jumpFloorII(number)
 {
@@ -38,9 +36,8 @@ function jumpFloorII(number)
 ```
 
 
+
 ## 解法三：幂运算符（**）
-
-
 
 ```javascript
 function jumpFloorII(number)
