@@ -17,7 +17,7 @@
         // 方法一：
         function rectCover_1(number) {
             if (number <= 2) return number;
-            return rectCover(number - 1) + rectCover(number - 2);
+            return rectCover_1(number - 1) + rectCover_1(number - 2);
         }
 
         // 方法二：

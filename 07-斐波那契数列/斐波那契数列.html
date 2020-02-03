@@ -19,7 +19,7 @@
         // 一个 Fibonacci 数字是之前两个 Fibonacci 数字之和，最前面的两个数字是 0 和 1。按照递归的方式，很有可能会产生很强的尾递归现象导致超时或溢出。
 
         function Fibonacci_1(n) {
-            return n < 2 ? n : Fibonacci(n - 1) + Fibonacci(n - 2);
+            return n < 2 ? n : Fibonacci_1(n - 1) + Fibonacci_1(n - 2);
         }
 
 

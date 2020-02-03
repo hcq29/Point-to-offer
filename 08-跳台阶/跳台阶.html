@@ -17,15 +17,15 @@
 
 
         // 解法一：递归法
-        function jumpFloor(number) {
+        function jumpFloor_1(number) {
             // write code here
-            return number < 3 ? number : jumpFloor(number - 1) + jumpFloor(number - 2);
+            return number < 3 ? number : jumpFloor_1(number - 1) + jumpFloor_1(number - 2);
         }
 
 
         // 解法二：数组法
         // 由于递归的方法时间复杂度太高了，我们不妨试试数组的方法。
-        function jumpFloor(number) {
+        function jumpFloor_2(number) {
             var array = [];
             array[0] = 0;
             array[1] = 1;
@@ -40,7 +40,7 @@
 
         // 解法二：变量法
         // 我们定义的数组，造成了空间较大，采用变量存储的方法优化代码。
-        function jumpFloor(number) {
+        function jumpFloor_3(number) {
             if (number < 3) return number;
 
             var one = 1,

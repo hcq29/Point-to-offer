@@ -8,7 +8,7 @@
 // 解法一：递归法
 function jumpFloor_1(number) {
     // write code here
-    return number < 3 ? number : jumpFloor(number - 1) + jumpFloor(number - 2);
+    return number < 3 ? number : jumpFloor_1(number - 1) + jumpFloor_1(number - 2);
 }
 
 

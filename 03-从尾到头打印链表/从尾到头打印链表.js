@@ -76,7 +76,7 @@ function printListFromTailToHead_2(head) {
 function printListFromTailToHead_3(head) {
     var array = [];
     if (head != null) {
-        array = printListFromTailToHead(head.next);
+        array = printListFromTailToHead_3(head.next);
     }
     array.push(head.val); 
     return array;
