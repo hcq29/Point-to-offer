@@ -49,11 +49,20 @@ function Power(base, exponent){
     if(exponent < 0) n = 0-exponent;
     var temp = Power(base, parseInt(n / 2));
     var result = 1;
-    if (n % 2 !== 0) result = base * temp * temp;
-    else result =temp * temp;
+    if (n % 2 !== 0) result = base * temp * temp;  //  或者 if(n & 1 === 1)
+    else result = temp * temp;
     return exponent < 0 ? 1 / result : result;
 }
 ```
+
+其中的`temp`实现的是幂的二分运算
+
+比如 5<sup>11</sup>，我们将之拆分成  5<sup>5</sup> * 5<sup>5</sup>  但是 依据 11 是奇数这时候会少了一个 5<sup>1</sup>  也就是`base`
+
+- 当遇到 奇数 时，result  = base * (temp * temp) 
+- 当遇到 偶数 时，result = temp * temp;
+
+
 
 迭代实现
 
