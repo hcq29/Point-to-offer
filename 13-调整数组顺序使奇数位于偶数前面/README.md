@@ -35,6 +35,8 @@ function reOrderArray(array)
 }
 ```
 
+![image-20200203195151993](images/image-20200203195151993.png)
+
 > 时间复杂度：O(N)
 >
 > 空间复杂度： O(N)
@@ -47,7 +49,8 @@ function reOrderArray(array)
 
 ![微信图片_20191220111540](images/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20191220111540.jpg)
 
-
+- 首先一旦查找到奇数，并用 k 记录奇数的位置
+- 用 j 来限制当前奇数需要移动的次数（表示奇数前面有多少个偶数）
 
 ```javascript
 function reOrderArray(array)
@@ -69,6 +72,9 @@ function reOrderArray(array)
 }
 ```
 
+![image-20200203194125057](images/image-20200203194125057.png)
+
 > 时间复杂度：O(N<sup>2</sup>)
 >
 > 空间复杂度： O(1)
+

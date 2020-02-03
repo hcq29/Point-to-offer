@@ -34,6 +34,7 @@ function reOrderArray_2(array) {
     for (var i = 0; i < array.length; i++) {
         if (array[i] % 2 == 1) {
             var j = i;
+            console.log(i, j, k);
             while (j > k) {
                 var temp = array[j];
                 array[j] = array[j - 1];
