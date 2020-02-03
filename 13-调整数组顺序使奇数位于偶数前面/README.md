@@ -35,8 +35,40 @@ function reOrderArray(array)
 }
 ```
 
+> 时间复杂度：O(N)
+>
+> 空间复杂度： O(N)
 
 
-### 解法二：移动（冒泡思想）
 
-为了不改变奇数和奇数，偶数和偶数之间的相对位置，我们联想到，排序的方法中，稳定的方法有：
+### 解法二：移动（插入思想）
+
+为了不改变奇数和奇数，偶数和偶数之间的相对位置，我们联想到，排序的方法中，稳定的方法有：冒泡、插入、归并等。
+
+![微信图片_20191220111540](images/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20191220111540.jpg)
+
+
+
+```javascript
+function reOrderArray(array)
+{
+    var k = 0
+    for(var i = 0; i < array.length; i++){
+        if(array[i] % 2 == 1){
+            var j = i;
+            while(j > k){
+                var temp = array[j];
+                array[j] = array[j - 1];
+                array[j - 1] = temp;
+                j--;
+            }
+            k++;
+        }
+    }
+    return array;
+}
+```
+
+> 时间复杂度：O(N<sup>2</sup>)
+>
+> 空间复杂度： O(1)
