@@ -7,7 +7,7 @@
 读者可以通过阅读对应题目的解法，在[牛客网-在线编程-剑指offer](https://www.nowcoder.com/ta/coding-interviews)上进行测试并提交学习，也可以将代码克隆下来。
 
 ```b
-git clone https://github.com/hcq29/Sword-means-offer.git
+git clone https://github.com/hcq29/Point-to-offer.git
 ```
 
 得到文件后，进入对应的题目，可以直接点击`.html`文件在浏览器的控制台进行查看并调试，也可以通过本地的`node.js`进行代码的执行，方便学习。
@@ -16,9 +16,9 @@ git clone https://github.com/hcq29/Sword-means-offer.git
 node xxxx.js
 ```
 
-![](images/image-20200116140535097.png)
+![image-20200205172801677](images/image-20200205172801677.png)
 
-![](images/image-20200116140806972.png)
+![image-20200205172841226](images/image-20200205172841226.png)
 
 ## 题库
 
