@@ -52,6 +52,7 @@
 ```javascript
 function IsPopOrder(pushV, popV)
 {
+    if(pushV.length != popV.length) return false;
     //创建一个新的数组作为栈
     var newStack = [];
     while(pushV.length != 0){
@@ -63,7 +64,7 @@ function IsPopOrder(pushV, popV)
             newStack.pop();
         }
     }
-    //最后的popV元素全部出栈就符合
+    //最后的newStack元素全部出栈就符合
     return newStack.length == 0;
 }
 ```
