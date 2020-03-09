@@ -114,3 +114,8 @@ function minNumberInRotateArray(rotateArray)
 ```
 
 ![image-20200130171004946](images/image-20200130171004946.png)
+
+
+上一篇：[05-用两个栈实现队列](../05-用两个栈实现队列/)
+
+下一篇：[07-斐波那契数列](../07-斐波那契数列/)

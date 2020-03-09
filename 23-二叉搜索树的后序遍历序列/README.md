@@ -59,4 +59,7 @@ function VerifySquenceOfBST(sequence)
     return true;
 }
 ```
+上一篇：[22-从上往下打印二叉树](../22-从上往下打印二叉树/)
+
+下一篇：[24-二叉树中和为某一直的路径](../24-二叉树中和为某一直的路径)
 
