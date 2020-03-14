@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二叉树中和为某一值的路径</title>
+</head>
+
+<body>
+
+    <script>
+        function Tree() {
+
+            // 新结点创建的构造函数
+            function TreeNode(val) {
+                this.val = val;
+                this.left = null;
+                this.right = null;
+            }
+
+            // 保存根的属性
+            this.root = null;
+
+            // 创建关于二叉搜索树的相关操作方法
+
+            // 插入元素，给用户使用
+            Tree.prototype.insert = function (val) {
+                // 1、创建新结点
+                var newNode = new TreeNode(val);
+
+                // 2、判断是否为空树
+                // 2.1如果是空树，则让根的属性指向新结点
+                if (this.root == null) {
+                    this.root = newNode;
+                } else {// 2.2如果不是非空树，则寻找合适的位置插入
+                    this.insertNode(this.root, newNode);
+                }
+            }
+
+            // 用于内部使用
+            Tree.prototype.insertNode = function (node, newNode) {
+
+                // 1、比较结点与新结点的值大小
+                // 1.1如果结点的值比新结点的值小
+                if (node.val < newNode.val) {
+                    // 比较结点的右子树为空时插入，不为空时继续往下比较
+                    if (node.right == null) {
+                        node.right = newNode;
+                    } else {
+                        this.insertNode(node.right, newNode);
+                    }
+                } else { // 1.2 如果结点的值比新结点的值大
+                    // 比较结点的左子树为空时插入，不为空时继续往下比较
+                    if (node.left == null) {
+                        node.left = newNode;
+                    } else {
+                        this.insertNode(node.left, newNode);
+                    }
+                }
+            }
+        }
+
+
+        // 测试
+        // 1、创建Tree
+        var tree = new Tree();
+
+        // 2、插入数据
+        tree.insert(10);
+        tree.insert(5);
+        tree.insert(12);
+        tree.insert(4);
+        tree.insert(7);
+
+
+
+        /* function TreeNode(x) {
+        this.val = x;
+        this.left = null;
+        this.right = null;
+        } */
+        function FindPath(root, expectNumber) {
+            // ①
+            var listAll = [];
+            var list = [];
+            function find(root, target) {
+                if (root === null) return;
+                // ②
+                list.push(root.val);
+                target -= root.val;
+                // ③
+                if (target === 0 && root.left === null && root.right === null)
+                    listAll.push(Array.from(list));  // 数组深拷贝
+                // ④
+                find(root.left, target);
+                find(root.right, target);
+                list.pop();
+            }
+            find(root, expectNumber)
+            // ⑤
+            return listAll;
+        }
+        console.log(FindPath(tree.root, 22))  //[ [ 10, 5, 7 ], [ 10, 12 ] ]
+    </script>
+
+</body>
+
+</html>
